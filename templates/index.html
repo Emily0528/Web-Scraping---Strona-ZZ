@@ -35,15 +35,32 @@ block content %}
     setInterval(updateClock, 1000);
     updateClock(); // Initialize clock immediately
   </script>
-  <h1>Zagadki i Głosy</h1>
+
   {% for puzzle in puzzles_and_buttons %}
-  <div class="contener">
+  <div class="contener" id="carousel">
     <div class="naglowek"><h2>Zagadka Dnia</h2></div>
     <div class="quote-container">
       <div class="card-text">{{ puzzle }}</div>
     </div>
   </div>
+
   {% endfor %}
+  <div class="box">
+    <h1>Życzenia z humorem</h1>
+    <div class="gradient">
+      <div class="text-container">
+        {% for wish in birthday_wishes %}
+        <div class="text-item">
+          <div class="wish bck">
+            <h3>{{ wish.title }}</h3>
+            <p>{{ wish.paragraph }}</p>
+            <div class="clean-text">{{ wish.clean_text }}</div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
   <div class="box">
     <h1>Śmieszne zagadki</h1>
     <div class="horizontal">
@@ -56,3 +73,4 @@ block content %}
   </div>
 </main>
 {% endblock %}
+
