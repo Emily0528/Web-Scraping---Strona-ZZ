@@ -122,5 +122,5 @@ def zyczenia():
     return render_template("zyczenia.html", active_page= 'zyczenia', birthday_wishes=birthday_wishes)
 
 if __name__== "__main__": 
-    app.run(debug=True)
+    
     
