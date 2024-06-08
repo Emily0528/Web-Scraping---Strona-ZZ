@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white; /* Kolor tekstu biały */
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #f4f4f4;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: url("/static/ghost-cursor.png") 16 16, auto;
+}
+
+main {
+  padding-top: 100px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2em; /* Przykładowa wielkość fontu dla nagłówków */
+  font-family: Tilt Prism;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  font-size: 1em; /* Przykładowa wielkość fontu dla tekstu bazowego */
+}
+header {
+  width: 100%;
+  margin: 0;
+}
+
+nav {
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+  height: 80px;
+  background-color: black;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: -6px;
+  height: 100%;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+  line-height: 80px;
+}
+
+nav ul li a {
+  display: inline-block;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 100%;
+}
+
+nav ul li a.active {
+  /* background-color: #ffffff;*/
+  /* background-color: #f07400;*/
+  background-image: linear-gradient(to top, #f07400, transparent);
+  color: rgb(255, 255, 255);
+}
+
+nav ul li.logo {
+  margin: 0;
+}
+
+/*scraping*/
+.quote-container {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 10px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+.quote {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+.author {
+  font-size: 1em;
+  text-align: right;
+  font-style: italic;
+}
+
+.quote {
+  flex: 1;
+}
+
+.votes {
+  background-color: #28a745;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+#clock {
+  font-size: 48px;
+  font-family: "Tilt Prism";
+  text-align: center;
+  margin: 20px;
+}
+
+/*zagadka dnia*/
+.naglowek {
+  text-align: center;
+}
+
+.contener {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f07400;
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 10px;
+  max-width: 610px;
+}
+
+.wishes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 100px;
+  /*padding-left: 100px;*/
+}
+
+.wishes-box {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.wish {
+  flex: 1 0 45%;
+  margin: 10px;
+}
+
+.wish h3 {
+  margin-top: 0;
+  color: #f07400;
+}
+
+/*do wykożystania*/
+.gradient {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    #f07400,
+    transparent
+  );
+  width: 100%;
+  height: 100px;
+}
+
+.gradient-dark {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, #f07400, transparent, #f07400);
+  width: 100%;
+  height: 100px;
+  z-index: -1;
+}
+
+.logo {
+  color: #f07400;
+  margin-right: 50px;
+  font-family: Tilt Prism;
+  margin-left: 50px;
+  line-height: 80px;
+}
+
+/*karuzela*/
+.horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+.quote-box {
+  flex: 0 0 auto; /* Zapobiega kurczeniu się elementów */
+  width: 300px; /* Szerokość każdego elementu karuzeli */
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #333; /* Kolor tła dla elementu */
+  color: #f4f4f4; /* Kolor tekstu */
+  padding: 20px;
+  box-sizing: border-box; /* Upewnij się, że padding nie zwiększa szerokości elementu */
+  border-radius: 10px;
+}
+
+.quote-container-horizontal:last-child {
+  margin-right: 0; /* Usuń margines dla ostatniego elementu */
+}
+
+.box {
+  margin-top: 150px;
+}
+
+#detal {
+  text-align: center;
+}
+
+span {
+  color: #f07400;
+}
