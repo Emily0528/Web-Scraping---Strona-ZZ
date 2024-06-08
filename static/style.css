@@ -29,10 +29,11 @@ body {
   align-items: center;
   flex-direction: column;
   cursor: url("/static/ghost-cursor.png") 16 16, auto;
+  height: 100%;
 }
 
 main {
-  padding-top: 100px;
+  padding: 100px 0;
   margin: 0 auto;
 }
 
@@ -274,4 +275,10 @@ span {
   background: var(--secondary-color);
   border-radius: 8px;
   cursor: default;
+}
+
+#footer {
+  clear: both;
+  height: 29px;
+  color: var(--background-color);
 }
